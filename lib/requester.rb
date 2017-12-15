@@ -1,12 +1,12 @@
 require 'open-uri'
-class Request
+class Requester
   attr_accessor :url
 
   def initialize(url)
     @url = url
   end
 
-  def requesto
+  def request
     content = open(url).read
   end
 

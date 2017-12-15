@@ -12,11 +12,11 @@ class Executioner
   end
 
   def execute
-    request = Request.new(
+    request = Requester.new(
       "https://api.github.com/repos/#{author}/#{project}/contributors"
-    ).requesto
+    ).request
     list = ListPrimer.new(request).prime("contributions", url_col)
-    Wraitah.new(cols_to_write, list).write(
+    Writer.new(cols_to_write, list).write(
       "#{project}+#{DateTime.now.strftime("%d-%m-%Y--%H:%M")}.txt"
     )
     puts "done"

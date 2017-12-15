@@ -1,4 +1,4 @@
-class Wraitah
+class Writer
   attr_accessor :cols, :list
   def initialize(cols, list)
     @cols = cols
