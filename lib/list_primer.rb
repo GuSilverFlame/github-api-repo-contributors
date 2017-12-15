@@ -5,6 +5,14 @@ class ListPrimer
     @response = response
   end
 
+  def prime(order, expansible_column = nil)
+    parse
+    expand(expansible_column) if expansible_column
+    @list.sort{|first, second| second[order] <=> first[order]}
+  end
+
+  private
+
   def expand(url_col)
     @list = @list.map do |result|
       second_depth = JSON.parse(Request.new(result[url_col]).requesto)
@@ -14,12 +22,6 @@ class ListPrimer
 
   def parse
     @list = JSON.parse(response)
-  end
-
-  def prime(order, expansible_column = nil)
-    parse
-    expand(expansible_column) if expansible_column
-    @list.sort{|first, second| second[order] <=> first[order]}
   end
 
 end
