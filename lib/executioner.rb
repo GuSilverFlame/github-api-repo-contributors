@@ -1,7 +1,7 @@
 require 'date'
-require_relative '../lib/list_primer'
-require_relative '../lib/requester'
-require_relative '../lib/writer'
+require_relative 'list_primer'
+require_relative 'requester'
+require_relative 'writer'
 class Executioner
   attr_accessor :author, :project, :cols_to_write, :url_col
   def initialize(author, project, cols_to_write, url_col = 'url')
