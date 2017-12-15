@@ -1,4 +1,4 @@
-require_relative 'executioner'
+require_relative '../lib/executioner'
 Executioner.new(
   "Dinda-com-br",
   "braspag-rest",
