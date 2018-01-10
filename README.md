@@ -14,7 +14,8 @@ and follow the on console instructions
   TODO
   replace test/unit for rspec
   remove text in portuguese from the code
------------------------------------------------------
+
+
 GITHUB api lista de comitters
 
 esse é um projecto simples que consome a api do github para pegar os committers de um projeto
@@ -26,7 +27,8 @@ ruby bin/dinda_run.rb
 para rodar com outros parametros execute
 ruby bin/interactive_run.rb
 e siga as instruções no console
------------------------------------------------------
+
+
   TODO
  trocar test/unit por rspec
  tirar textos em portugês do código
