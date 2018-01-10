@@ -10,11 +10,10 @@ to run with other parameters execute
 ruby bin/interactive_run.rb
 and follow the on console instructions
 
-=================
+
   TODO
   replace test/unit for rspec
   remove text in portuguese from the code
-=================
 -----------------------------------------------------
 GITHUB api lista de comitters
 
@@ -27,8 +26,7 @@ ruby bin/dinda_run.rb
 para rodar com outros parametros execute
 ruby bin/interactive_run.rb
 e siga as instruções no console
-=================
+-----------------------------------------------------
   TODO
  trocar test/unit por rspec
  tirar textos em portugês do código
-=================
